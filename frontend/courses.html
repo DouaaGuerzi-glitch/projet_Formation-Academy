@@ -1,1 +1,193 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدورات – ProFormation Academy</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        header {
+            background: #0b1c2d;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        .logo {
+            color: #d4af37;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .section {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 30px;
+            background: white;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border-left: 6px solid #d4af37;
+            border-radius: 12px;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            color: #0b1c2d;
+            font-size: 2em;
+        }
+
+        .course {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin-bottom: 40px;
+            gap: 20px;
+        }
+
+        .course img {
+            width: 200px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .course-info {
+            flex: 1;
+        }
+
+        .course-info h3 {
+            color: #0b1c2d;
+            font-size: 1.6em;
+            margin-bottom: 15px;
+        }
+
+        .course-info ul {
+            list-style: none;
+        }
+
+        .course-info ul li::before {
+            content: "✔️ ";
+            margin-right: 10px;
+            color: #d4af37;
+            font-size: 1.2em;
+            margin-left: 5px;
+        }
+
+        footer {
+            background: #0b1c2d;
+            color: #ccc;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+            border-top: 1px solid #d4af37;
+        }
+
+        @media(max-width:768px) {
+            .course {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .course img {
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">ProFormation Academy</h1>
+            <nav>
+                <a href="index.html">الرئيسية</a>
+                <a href="courses.html">الدورات</a>
+                <a href="register.php">التسجيل / تواصل</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section">
+        <h2>الدورات التكوينية المتاحة</h2>
+
+        <div class="course">
+            <img src="images.jpg" alt="informatique">
+            <h3>الإعلام الآلي</h3>
+            <ul>
+                <li>🖥️ HTML, CSS, JS, PHP</li>
+                <li>🔧 إدارة أنظمة وشبكات</li>
+                <li>💻 تطوير تطبيقات وبرمجيات</li>
+            </ul>
+        </div>
+        </div>
+
+        <div class="course">
+            <img src="download.jpg" alt="اللغات">
+            <div class="course-info">
+                <h3>اللغات</h3>
+                <ul>
+                    <li>🇫🇷 الفرنسية – مبتدئ إلى متقدم</li>
+                    <li>🇬🇧 الإنجليزية – تواصل عملي</li>
+                    <li>🇩🇪 الألمانية – قواعد ومحادثة</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="course">
+            <img src="img.jpg" alt="التسيير والمحاسبة">
+            <div class="course-info">
+                <h3>التسيير والمحاسبة</h3>
+                <ul>
+                    <li>📊 المحاسبة المالية والإدارية</li>
+                    <li>🗂️ إدارة الموارد البشرية</li>
+                    <li>💼 إعداد التقارير المالية</li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        © 2025 ProFormation Academy
+    </footer>
+
+</body>
+
+</html>
