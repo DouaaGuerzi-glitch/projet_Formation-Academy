@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProFormation Academy</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        header {
+            background: #0b1c2d;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #d4af37;
+        }
+
+        .logo {
+            color: #d4af37;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(11, 28, 45, 0.7), rgba(11, 28, 45, 0.7)), url('images/hero.jpg') center/cover no-repeat;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 25px;
+        }
+
+        .btn-gold {
+            background: #d4af37;
+            color: #0b1c2d;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 40px;
+            font-weight: 700;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .btn-gold:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .section {
+            max-width: 1000px;
+            margin: 60px auto;
+            padding: 30px;
+            background: white;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            border-left: 6px solid #d4af37;
+            border-radius: 12px;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #0b1c2d;
+            font-size: 2em;
+        }
+
+        .section p {
+            line-height: 1.8;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .section ul {
+            margin-left: 20px;
+            list-style: none;
+        }
+
+        .section ul li::before {
+            content: "✔️ ";
+            margin-right: 10px;
+            font-size: 1.2em;
+            color: #d4af37;
+        }
+
+        footer {
+            background: #0b1c2d;
+            color: #ccc;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+            border-top: 1px solid #d4af37;
+        }
+
+        @media(max-width:768px) {
+            .hero h2 {
+                font-size: 2em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">Formation Academy</h1>
+            <nav>
+                <a href="#home">الرئيسية</a>
+                <a href="courses.html">الدورات</a>
+                <a href="register.php">التسجيل / تواصل</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>معهد التكوين والتأهيل المهني</h2>
+            <p>تكوين معتمد • تأطير احترافي • مستقبل واعد</p>
+            <a href="register.php" class="btn-gold">سجّل الآن</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>عن المعهد</h2>
+        <p>تأسس معهد ProFormation في عام 2015 لتقديم دورات احترافية في الإعلام الآلي، اللغات، والتسيير والمحاسبة، مع
+            متابعة شخصية لكل متدرب وإصدار شهادات معترف بها.</p>
+        <ul>
+            <li>✔️ أكثر من 2500 متدرب</li>
+            <li>✔️ برامج تدريبية معتمدة</li>
+            <li>✔️ أساتذة ذوي خبرة عالية</li>
+            <li>✔️ تكوين حضوري وعن بعد</li>
+        </ul>
+    </section>
+
+    <footer>
+        © 2025 ProFormation Academy
+    </footer>
+
+</body>
+
+</html>
